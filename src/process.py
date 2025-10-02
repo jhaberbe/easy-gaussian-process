@@ -1,3 +1,9 @@
+import pyro
+import pyro.distributions as dist
+import torch
+
+device="cpu"
+
 class GaussianProcess:
 
     def __init__(self, dataset, device=device):

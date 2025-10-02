@@ -1,3 +1,9 @@
+import pyro
+import pyro.distributions as dist
+import torch
+
+device="cpu"
+
 class SizeFactor:
     def __init__(self, dataset, device=device):
         self.N = dataset["counts"].shape[0]

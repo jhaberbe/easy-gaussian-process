@@ -1,3 +1,9 @@
+import pyro
+import pyro.distributions as dist
+import torch
+
+device="cpu"
+
 class BaseKernel:
     def __init__(self, dataset, device="cuda"):
         self.N = dataset["counts"].shape[0]
